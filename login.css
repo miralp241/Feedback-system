@@ -1,0 +1,73 @@
+body{
+    display:grid;
+    grid-template-areas:'header header'
+        'login login' 
+        'footer footer';
+    font-family: Arial, Helvetica, sans-serif;
+    grid-gap:20px;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+#uname-req,#psw-req {
+    color: red;
+    font-weight: bold;
+}
+.header img {
+    float:left;
+}
+.footer img {
+    float:left;
+}
+.header{
+    grid-area: header;
+    border:1px solid black;
+    z-index: 1;
+}
+.login{
+    grid-area: login;
+    z-index: 1;
+}
+.footer{
+    grid-area: footer;
+    z-index: 1;
+}
+
+input[type=text]:focus {
+    background-color: #3CBC8D;
+    color:white;
+}
+input[type=password]:focus {
+    background-color: #3CBC8D;
+    color:white;
+}
+input[type=text],input[type="password"]  {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    
+    /* display: inline-block; */
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #555555;
+    color: white;
+}
+/* input:checked ~ .checkmark {
+    background-color: #2196F3;
+} */
+

@@ -1,0 +1,79 @@
+<!doctype <!DOCTYPE html>
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="overlay.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="admin.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="admin.js"></script>
+    <script src="feedback.js"></script>
+
+</head>
+<body>
+    <div class="header">
+        <h1 style="font-size: 50px">S.V.N.I.T</h1>
+        <h2 style="font-size: 30px">COLLEGE FEEDBACK SYSTEM</h2>
+        <button class="button" value="log-out" onclick=log()>LOG-OUT</button>
+    </div>
+
+
+
+    <div class="task">
+
+        <div class="container" style="height:225px; width:225px;">
+            <img style="max-width:220px; max-height:220px;" src="feedback.png" alt="+feedback">
+            <div><div class="feed-head">Your Feedback:</div>
+                <select id="sub-select" onchange="FEEDBACK()">
+                    <option> Select Subject</option>
+                    <option value="co">CO</a></option>
+                    <option value="ds">DSA</option>
+                    <option value="st">ST</option>
+                    <option value="dms">DMS</option> 
+                </select>
+            
+            </div>
+        </div>
+
+
+        <div id="arm">
+            <div class="content">
+                <fieldset>
+                    <legend>Your Valuable Feedback can Help us Improvise</legend>
+                    <form method="POST">
+                        <label for="q1"><b>Q1 -> Did the idea of the subject appear intutive to you? </b></label>
+                        <br>
+                        <input type="text" placeholder="write here ..." name="q1" style="width:100%;" required >
+                        <br><br>
+                        <label for="q2"><b>Q2 -> Did the faculties provide you a deep intution of the subject?</b></label>
+                        <br>
+                        <input type="text" placeholder="write here ..." name="q2" style="width:100%;" required>
+                        <br><br>
+                        <label for="q3"><b>Q3 -> Were the tutorials useful ?</b></label>
+                        <br>
+                        <input type="text" placeholder="write here ..." name="q3" style="width:100%;" required>
+                        <br><br>
+                        <label for="q4"><b>Q4 -> Was proper time provided to take care of your doubts?</b></label>
+                        <br>
+                        <input type="text" placeholder="write here ..." name="q4" style="width:100%;" required>
+                        <br><br>
+                        <label for="q5"><b>Q5 -> Were all the topics covered in lectures?</b></label>
+                        <br>
+                        <input type="text" placeholder="write here" name="q5" style="width:100%;" required>
+                        <br><br>
+                        <br><br>
+                        <textarea placeholder="Any suggestions ..." rows="10" cols="100" name="suggestions"></textarea>
+                        <div class="clearfix">
+                            <button type="button" onclick="document.getElementById('arm').style.display='none'" class="cancelbtn">Cancel</button>
+                            <button type="submit" class="signupbtn">Submit</button>
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+    </div> 
+
+    <div class="footer">
+        <h3><b>Sardar Vallabhbhai National Institute of Technology, Surat</b></h3>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="overlay.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="admin.css" />
+    <script src="admin.js"></script>
+
+</head>
+<body>
+    <div class="header">
+        <h1 style="font-size: 50px">S.V.N.I.T</h1>
+        <h2 style="font-size: 30px">COLLEGE FEEDBACK SYSTEM</h2>
+        <button class="button" value="log-out" onclick=logout()>LOG-OUT</button>
+    </div>
+    <div class="functionality">
+        <div class="container">
+            <img src="images11.jpg" alt="addstudent">
+            <div><a href="javascript:fun(1)">Add Student</a></div>
+        </div>
+
+        <div class="container">
+            <img style="max-width:220px; max-height:220px;" src="feedback.png" alt="addfeedback">
+            <div><a href="javascript:fun(2)">Add Feedback</a></div>
+        </div>
+
+        <div class="container">
+            <img src="sb.jpeg" alt="addsub">
+            <div><a href="javascript:fun(3)">Add Subjects</a></div>
+        </div>
+
+        <div class="container" >
+            <img src="download.png" alt="report">
+            <div><a href="javascript:fun(4)">Check  Feedback Reports</a></div>
+        </div>
+
+        <div id="arm" style="display:none;">
+            <div class="content" id="fir">
+                <fieldset>
+                    <legend>Student Details</legend>
+                    <form method="POST">
+                        <label for="fname"><b>First Name:</b></label>
+                        <input type="text" placeholder="Enter first name" name="fname" required>
+                        <br><br>
+                        <label for="lname"><b>Last Name:</b></label>
+                        <input type="text" placeholder="Enter last name" name="lname" >
+                        <br><br>
+                        <label for="rollno"><b>Assign Roll No:</b></label>
+                        <input type="text" placeholder="Enter Roll no" name="rollno" required>
+                        <br><br>
+                        <label for="contactno"><b>Contact Number:</b></label>
+                        <input type="number" placeholder="Enter Contact Number" name="contactno" required>
+                        <br><br>
+                        <label for="emailid"><b> Email:</b></label>
+                        <input type="text" placeholder="Enter Email Address" name="emailid" required>
+                        <br><br>
+                        <div class="clearfix">
+                            <button type="button" onclick="document.getElementById('arm').style.display='none'" class="cancelbtn">Cancel</button>
+                            <button type="submit" class="signupbtn">Add</button>
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+
+        <div id="arc" style="display:none;">
+            <br>
+            <div class="content">
+                <fieldset>
+                    <legend>Subject Details</legend>
+                    <form method="POST">
+                        <label for="subname"><b>Subject Name:</b></label>
+                        <input type="text" placeholder="Enter subject name" name="subname" required>
+                        <br><br>
+                        <label for="subcord"><b>Subject Coordinator:</b></label>
+                        <input type="text" placeholder="Enter Name of Coordinator" name="subcord" required>
+                        <br><br>
+
+                        <div class="clearfix">
+                            <button type="button" onclick="document.getElementById('arc').style.display='none'" class="cancelbtn">Cancel</button>
+                            <button type="submit" class="signupbtn">Add Subject</button>
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+
+        <div id="ram" style="display:none;">
+            <div class="content">
+                <fieldset>
+                    <legend>Your Written Feedback</legend>
+                    <form method="POST">
+                        <textarea placeholder="Write your response here ..." rows="10" cols="100" name="admin-feed"></textarea>
+
+                        <br><br>
+                        <div class="clearfix">
+                            <button type="button" onclick="document.getElementById('ram').style.display='none'" class="cancelbtn">Cancel</button>
+                            <button type="submit" class="signupbtn">Send Response</button>
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer"  >
+        <h3><b>Sardar Vallabhbhai National Institute of Technology, Surat(395007)</b></h3>
+        <br>
+        <br>
+    </div>
+    
+</body>
+</html>

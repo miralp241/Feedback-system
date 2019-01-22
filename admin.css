@@ -1,0 +1,117 @@
+body {
+    display:grid;
+    grid-template-areas:"head head head " "admin task task" "footer footer footer";
+    grid-gap:30px;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-gap:20px;
+}
+
+.header img{
+    float:left;
+}
+.header {
+    grid-area: head;
+    text-align: center;
+}
+
+
+.detail{
+    grid-area: admin;
+    /* text-align:center; */
+    font-size:17px;
+    font-family:Century Gothic;
+    
+}
+.detail img{
+    width:250px;
+    height:250px;
+    border-radius: 1em;
+}
+
+
+
+.task   {
+    grid-area: task;
+}
+
+
+
+.container img{
+    border-radius: 30%;
+
+    max-height:180px;
+    max-width:180px;
+}
+.container  {
+    transition-duration: 0.4s;
+
+    box-shadow: 1em 1em 1em gray;
+    float:left;
+    display: block;
+    height:200px;
+    width:200px;
+    margin:20px;
+    text-shadow: 2px 2px 2px gray;
+    text-align: center;
+    font-family: Segoe Print;
+    font-weight: bold;
+    padding:10px;
+
+}
+.container:hover {
+    transform: translate(5px,-5px);
+}
+.container a   {
+    text-decoration: none;
+    color:rgb(130, 255, 47);
+}
+.container a:hover  {
+    color:green;
+    text-decoration: underline;
+}
+
+
+
+
+
+.footer img{
+    float:left;
+}
+.footer{
+    grid-area: footer;
+    text-align:center;
+}
+
+
+.button {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    float:right;
+    /* display: inline-block; */
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #555555;
+    color: white;
+}
+
+input[type=text] {
+    width:100%;
+}
+
+.arc {
+    width:800px;
+}
+
+.arc {
+    width:800px;
+}
